@@ -15,6 +15,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/diia-leak/',
   plugins: [
     (!process.env.IS_BUILD ? basicSsl() : undefined),
     VueRouter({
