@@ -86,7 +86,7 @@ const saveData = async () => {
       await writer.write(new Uint8Array(e.data.chunk))
     }
   }
-  csvGenerator.postMessage({ rows: 10 })
+  csvGenerator.postMessage({ rows: rows.value })
 }
 
 </script>
